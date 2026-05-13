@@ -27,7 +27,32 @@
         <div class="app-content">
           <!--begin::Container-->
           <div class="container-fluid">
-            
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between">
+                                <h4>Kategori</h4>
+                                
+                            </div>
+                            <div class="card-body">
+                                <form action="{{ route('kategori.store') }}" method="POST">
+
+                                @csrf
+                                <div class="mb-3">
+                                    <label for=""> Nama Kategori</label>
+                                    <input type="text" name="nama_kategori" class="form-control">
+                                </div>
+
+                                <button class="btn btn-primary">
+                                    Simpan
+                                </button>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
           </div>
           <!--end::Container-->
         </div>
